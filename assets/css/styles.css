@@ -1,0 +1,121 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding y border se incluyan en el tamaño total de los elementos */
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    display: flex; /* Establece un contenedor flex */
+    height: 100vh; /* Altura completa de la ventana */
+}
+
+/* Sección de contactos */
+.contacts-section {
+    flex: 0 0 25%; /* Ocupa el 25% del ancho del contenedor principal */
+    display: flex; /* Establece un contenedor flex */
+    flex-direction: column; /* Apila los elementos en columna */
+    border-right: 1px solid #ccc; /* Agrega una línea divisoria */
+    padding: 10px; /* Espaciado interno */
+}
+
+/* Estado del usuario */
+.user-status {
+    display: flex; /* Establece un contenedor flex */
+    align-items: center; /* Alinea verticalmente los elementos */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.user-image {
+    border-radius: 50%; /* Hace la imagen circular */
+    width: 50px; /* Ancho de la imagen */
+    height: 50px; /* Altura de la imagen */
+    margin-right: 10px; /* Espaciado a la derecha */
+}
+
+.status-info {
+    display: flex; /* Establece un contenedor flex */
+    flex-direction: column; /* Apila los elementos en columna */
+}
+
+.status-text {
+    font-size: 12px; /* Tamaño de fuente más pequeño */
+    color: #707070; /* Color plomo */
+}
+
+.status-icons {
+    display: flex; /* Establece un contenedor flex */
+    gap: 10px; /* Espaciado entre los íconos */
+    align-items: center; /* Alinea verticalmente los íconos */
+    margin-left: auto; /* Empuja los íconos hacia la derecha */
+}
+
+.status-icons i {
+    font-size: 20px; /* Tamaño de los íconos */
+    color: #707070; /* Color plomo para los íconos */
+}
+
+/* Lista de contactos */
+.contacts-list {
+    flex: 1; /* Toma el espacio disponible */
+    overflow-y: auto; /* Permite el desplazamiento vertical */
+}
+
+.contact {
+    display: flex; /* Establece un contenedor flex */
+    align-items: center; /* Alinea verticalmente los elementos */
+    padding: 20px; /* Espaciado interno */
+    border-bottom: 1px solid #ccc; /* Línea divisoria inferior */
+}
+
+.contact-image {
+    border-radius: 50%; /* Hace la imagen circular */
+    width: 40px; /* Ancho de la imagen */
+    height: 40px; /* Altura de la imagen */
+    margin-right: 10px; /* Espaciado a la derecha */
+}
+
+.contact-info {
+    display: flex; /* Establece un contenedor flex */
+    flex-direction: column; /* Apila los elementos en columna */
+}
+
+/* Botón Nuevo Chat */
+.new-chat-button {
+    display: flex; /* Establece un contenedor flex */
+    justify-content: center; /* Centra horizontalmente el botón */
+    padding: 10px; /* Espaciado interno */
+}
+
+/* Sección principal */
+.main-section {
+    flex: 1; /* Toma el espacio disponible */
+    display: flex; /* Establece un contenedor flex */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+.main-content {
+    text-align: center; /* Centra el texto */
+}
+
+.logo {
+    width: 100px; /* Ancho del logo */
+    height: 100px; /* Altura del logo */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.custom-button {
+    background-color: #c6a3e3; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de la fuente */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.custom-button:hover {
+    background-color: #b193d4; /* Color de fondo al pasar el mouse */
+}
